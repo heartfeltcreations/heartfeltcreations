@@ -1,0 +1,212 @@
+/* 
+Colores de la pagina: violeta (670093), violeta muy oscuro (390048), lila (eac7f9)
+Selectores: tipo (et), clase (etiqueta.class), clase (.class), id (#id), descendientes (et et), 
+hijos (et > et), consecutivos (e + e),grupo (x, x)
+ */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*scroll-behavior: smooth;*/}
+
+hr { color: #390048; }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out; }
+
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* Barra de navegacion */
+
+#navbar-home { 
+  background-color: #390048;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; 
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.nav-links a { color: #eac7f9; gap: 20px; }
+
+#navbar-home .logo img { height: 90px; } 
+
+/* Página completa*/
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background-color: black; }
+
+h1 { color: #eac7f9; text-align: center; font-size: 300%; }
+h2 { color: #eac7f9; text-align: center; font-size: 250%; }
+p { text-align: center; font-size: 25px; color: #eac7f9;}
+
+.divImg{ display: flex; flex-direction: column; }
+
+/* ---------------------------------------cabecera-------------------------------------------------------- */
+
+.resume { text-align: center; }
+
+#head h2 { font-size: 3rem; }
+
+#heartfeltCreations-logo { width: 40%; object-fit: cover;}
+
+.imgDivHome { text-align: center; width: 100%; }
+
+#presentation p { text-align: center; font-size: 120%; }
+
+/* ----------------------------------------------------cuerpo----------------------------------------------- */
+
+.resume { margin: 0; }
+
+/* ---------------------------------------------------Capacidades------------------------------------------- */
+
+.contenedor {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem; }
+
+#presentation p { font-size: 24px; }
+
+.listaCompetencias {
+  background-color: #eac7f9;
+  border: 2px solid #eac7f9;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px #eac7f9;
+  max-width: 400px;
+  padding: 2rem;
+  text-align: center;
+  transition: 0.3s ease; }
+
+.listaCompetencias:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+
+#competencias p { color: black; }
+
+.icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tituloDeTabla { color: #390048; display: inline; font-size: 150%;}
+
+.listaCompetencias h1 {font-size: 250%; color: #390048;}
+
+ol, ul {list-style: none;}
+
+ul { padding: 0; text-align: left; }
+
+ul li { margin-bottom: 0.5rem; text-align: center; font-size: 24px;}
+
+/* proyecto */
+
+.proyecto {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.proyecto img {
+  display: block;
+  width: 300px;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.proyecto .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(103, 0, 147, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.proyecto:hover img { filter: brightness(60%); }
+
+.proyecto:hover .overlay { opacity: 1; }
+
+.proyecto .overlay h3 { margin-bottom: 0.5rem; font-size: 1.2rem; }
+
+.proyecto .overlay a {
+  color: #eac7f9;
+  background-color: #390048;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.proyecto .overlay a:hover { background-color: #670093; }
+
+/* empresas con las que colaboré */
+
+#business-colab p {
+  text-align: center;
+  display: flex;
+  font-size: medium;
+}
+
+/* div colaboraciones */
+
+.colab-grids { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 2rem;
+  justify-items: center;
+  align-items: start; }
+
+/* div contact */
+
+.contenedor-form {  
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+  .form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;}
+
+  .form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover { background-color: #005fa3; }
+
+
+/* ----------------------------------------------Pie de página---------------------------------------------- */
+
+#foot { text-align: center; }

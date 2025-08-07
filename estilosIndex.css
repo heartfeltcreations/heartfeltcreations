@@ -8,6 +8,7 @@ hijos (et > et), consecutivos (e + e),grupo (x, x)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
   /*scroll-behavior: smooth;*/}
 
 hr { color: #390048; }
@@ -26,14 +27,11 @@ hr { color: #390048; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; 
-  border-bottom-left-radius: 15%;
-  border-bottom-right-radius: 15%;
-}
+  padding: 10px; }
 
 .nav-links a { color: #eac7f9; gap: 20px; }
 
-#navbar-home .logo img { height: 90px; } 
+#navbar-home .logo img { height: 60px; } 
 
 /* Página completa*/
 
@@ -208,5 +206,12 @@ ul li { margin-bottom: 0.5rem; text-align: center; font-size: 24px;}
 
 
 /* ----------------------------------------------Pie de página---------------------------------------------- */
+
+#contact-home a img { 
+  width: 3%;
+  display: inline-flex; 
+  gap: 20px; }
+
+#contact-home { display: block; text-align: center;}
 
 #foot { text-align: center; }
